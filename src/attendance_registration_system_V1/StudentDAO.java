@@ -7,26 +7,26 @@ public interface StudentDAO {
 	 * 
 	 * @return ArrayList<Track>
 	 */
-	public void getStudent();
+	abstract public void getStudent();
 
 	/**
 	 * Persists a student to the database
 	 * 
 	 * @param book
 	 */
-	public void writeTrack(Student student);
+	abstract public void writeTrack(Student student);
 
 	/**
 	 * Retrieves all students from the database
 	 */
-	public void showAllStudents();
+	abstract public void showAllStudents();
 
 	/**
 	 * Open the connection to the database
 	 * 
 	 */
 
-	public void openConnection();
+	abstract public void openConnection();
 
 	/**
 	 * Close the connection to the database
@@ -34,5 +34,5 @@ public interface StudentDAO {
 	 * When you're finished with the db its very important that you close the
 	 * connections so that data gets persisted.
 	 */
-	public void closeConnection();
+	abstract public void closeConnection();
 }

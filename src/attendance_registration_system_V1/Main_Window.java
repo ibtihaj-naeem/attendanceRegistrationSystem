@@ -9,12 +9,12 @@ import javax.swing.JMenu;
 public class Main_Window {
 
 	private DateCalculator dateCalc;
-	
+
 	private JFrame frame;
-    private JMenuBar statusBar;
-    private JMenu dateText;
-    private JMenu timeText;
-    private JMenu islamicDateText;
+	private JMenuBar statusBar;
+	private JMenu dateText;
+	private JMenu timeText;
+	private JMenu islamicDateText;
 
 	/**
 	 * Launch the application.
@@ -44,23 +44,22 @@ public class Main_Window {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		
+
 		dateCalc = new DateCalculator();
-		
+
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+
 		statusBar = new JMenuBar();
 		frame.setJMenuBar(statusBar);
-		
-        dateText = new JMenu();
-        dateText.setText("Date");
+
+		dateText = new JMenu("Date");
 		statusBar.add(dateText);
-		
+
 		islamicDateText = new JMenu("Islamic Date");
 		statusBar.add(islamicDateText);
-		
+
 		timeText = new JMenu("Time");
 		statusBar.add(timeText);
 	}
